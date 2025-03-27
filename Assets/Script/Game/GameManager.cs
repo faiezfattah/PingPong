@@ -24,15 +24,13 @@ public class GameManager : MonoBehaviour {
         Debug.Log($"score: {p1Score} v {p2Score}");
 
         if (p1Score == GameSettings.Instance.SCORE_TO_WIN) {
-            Debug.Log("Player 1");
-            EndGame("Player 1s");
+            EndGame("Player 1");
             return;
         } 
         else if (p2Score == GameSettings.Instance.SCORE_TO_WIN) {
             string winMessage = GameSettings.Instance.IS_PLAYER2_AI 
                 ? "Computer" 
                 : "Player 2";
-            Debug.Log(winMessage);
             EndGame(winMessage);
             return;
         }
