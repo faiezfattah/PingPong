@@ -333,7 +333,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.95, y: 0.1, z: 0}
-  m_LocalScale: {x: 0.26252252, y: 1.9672432, z: 1}
+  m_LocalScale: {x: 0.26252252, y: 1.0650778, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1346,7 +1346,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0, g: 0.25335073, b: 1, a: 1}
+  m_Color: {r: 0.7264151, g: 0.11307406, b: 0.13055257, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1366,7 +1366,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.03, y: 0.02, z: 0}
-  m_LocalScale: {x: 0.5894, y: 0.5894, z: 0.5894}
+  m_LocalScale: {x: 0.30286908, y: 0.30286908, z: 0.30286908}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1948,7 +1948,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.88, y: 0.1, z: 0}
-  m_LocalScale: {x: 0.27610126, y: 1.9672432, z: 1}
+  m_LocalScale: {x: 0.27610126, y: 1.0650778, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2489,8 +2489,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PADDLE_SPEED: 10
   BALL_SPEED: 5
+  SCORE_TO_WIN: 11
   IS_PLAYER2_AI: 1
-  SCORE_TO_WIN: 2
+  AI_DIFFICULTY: 1.3
 --- !u!4 &1461470612
 Transform:
   m_ObjectHideFlags: 0
@@ -2537,7 +2538,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballTransform: {fileID: 643613621}
   player2Mover: {fileID: 158918567}
-  randomizer: 2.8
 --- !u!4 &1683024517
 Transform:
   m_ObjectHideFlags: 0

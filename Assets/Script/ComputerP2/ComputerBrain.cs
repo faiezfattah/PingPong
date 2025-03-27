@@ -6,8 +6,6 @@ public class ComputerBrain : MonoBehaviour
     [SerializeField] private Transform ballTransform;
     [SerializeField] private Mover player2Mover;
    
-    [Header("AI Movement Settings")]
-    [SerializeField] private float randomizer = 0.5f;
 
     private Rigidbody2D ballRigidbody;
     private float targetYPosition;
@@ -34,10 +32,9 @@ public class ComputerBrain : MonoBehaviour
 
         float intersectionY = CalculateTrajectoryIntersection(currentBallPosition, ballVelocity);
     
-        targetYPosition = intersectionY + Random.Range(-randomizer, randomizer);
+        targetYPosition = intersectionY + Random.Range(-GameSettings.Instance.AI_DIFFICULTY, GameSettings.Instance.AI_DIFFICULTY);
 
-        // debug
-        Debug.DrawLine(currentBallPosition, new Vector2(player2Mover.transform.position.x, intersectionY), Color.red);
+        // Debug.DrawLine(currentBallPosition, new Vector2(player2Mover.transform.position.x, intersectionY), Color.red);
     }
 
     private float CalculateTrajectoryIntersection(Vector2 startPosition, Vector2 velocity) {
